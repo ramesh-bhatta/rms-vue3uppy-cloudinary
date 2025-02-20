@@ -91,9 +91,9 @@ onMounted(() => {
 
 });
 
-onBeforeUnmount(() => {
-  uppy.close();
-});
+// onBeforeUnmount(() => {
+//   uppy.close();
+// });
 
 </script>
 
