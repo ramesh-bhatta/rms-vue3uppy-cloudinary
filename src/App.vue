@@ -26,7 +26,7 @@ const onUploadSuccess = (result) => {
     :proudlyDisplayPoweredByUppy="uploaderConfig.showPoweredBy" :buttonText="'Upload Adgroup Images'"
     :theme="uploaderConfig.theme" :allowedMetaFields="uploaderConfig.allowedMetaFields" :inline="uploaderConfig.inline"
     @uploaded="onUploadSuccess">
-   <!-- <template v-slot:btn-icon>
+    <!-- <template v-slot:btn-icon>
         <b-icon icon="cloud-upload-alt"
         size="is-medium"></b-icon>
       </template> -->
