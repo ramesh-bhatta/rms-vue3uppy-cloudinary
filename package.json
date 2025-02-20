@@ -3,10 +3,7 @@
   "version": "1.0.2",
   "description": "A VueJs(Vue3) based uploader which upload files to cloudinary using uppy",
   "author": "Ramesh Bhatta(mail.rmes@gmail.com)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ramesh-bhatta/rms-vue3uppy-cloudinary.git"
-  },
+  "repository": "https://github.com/ramesh-bhatta/rms-vue3uppy-cloudinary.git",
   "private": false,
   "type": "module",
   "main": "dist/rms-vue3uppy-cloudinary.umd.js",
@@ -63,5 +60,6 @@
     "direct uploads",
     "client-side uploads",
     "Vue.js"
-  ]
+  ],
+  "license": "MIT"
 }
