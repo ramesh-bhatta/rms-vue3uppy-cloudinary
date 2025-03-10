@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeUnmount, onMounted } from 'vue';
+import { onBeforeMount, onBeforeUnmount, onMounted } from 'vue';
 import Uppy from '@uppy/core';
 import Dashboard from '@uppy/dashboard';
 import XHRUpload from '@uppy/xhr-upload';
@@ -91,9 +91,13 @@ onMounted(() => {
 
 });
 
-// onBeforeUnmount(() => {
-//   uppy.close();
-// });
+onBeforeUnmount(() => {
+  if (uppy.value) {
+    console.log("Destroying Uppy Instance");
+    uppy.value.close();
+    uppy.value = null;
+  }
+});
 
 </script>
 
